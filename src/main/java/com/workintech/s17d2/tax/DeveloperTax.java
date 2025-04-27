@@ -3,19 +3,19 @@ package com.workintech.s17d2.tax;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DeveloperTax implements Taxable{
+public class DeveloperTax implements Taxable {
     @Override
-    public double getSimpleTaxRate() {
+    public Double getSimpleTaxRate() {
         return 15d;
     }
 
     @Override
-    public double getMiddleTaxRate() {
+    public Double getMiddleTaxRate() {
         return 25d;
     }
 
     @Override
-    public double getUpperTaxRate() {
+    public Double getUpperTaxRate() {
         return 35d;
     }
 }
